@@ -21,6 +21,11 @@ packages:
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: rimabarman
   gitBranch: main
+- name: SIQACloudStreamsTests
+  gitServerName: rimaSCName
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: rimabarman
+  gitBranch: main
 services:
 - serviceName: project.siqa_gittestazpp_2425.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
@@ -71,10 +76,10 @@ services:
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
 configurationVariables:
-  ? artConnection.SIQA_GITTestAZPP_2425Project.project.siqa_gittestazpp_2425.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.minimumPoolSize
-  : "1"
   ? artConnection.SIQA_GITTestAZPP_2425Project.project.siqa_gittestazpp_2425.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.user
   : siqatest
+  ? artConnection.SIQA_GITTestAZPP_2425Project.project.siqa_gittestazpp_2425.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.minimumPoolSize
+  : "1"
   ? artConnection.SIQA_GITTestAZPP_2425Project.project.siqa_gittestazpp_2425.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
   : loginTimeout=60;driverType=thin;
   ? artConnection.SIQA_GITTestAZPP_2425Project.project.siqa_gittestazpp_2425.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.expireTimeout
